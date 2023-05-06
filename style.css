@@ -1,0 +1,69 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+  background: #E3E7E8;
+}
+/*-------------------------
+	General Styles
+--------------------------*/
+
+html{
+	overflow:hidden;
+}
+
+body {
+	font-size: 46px;
+	font-family: courier;
+}
+
+
+
+
+#aclock {
+	position: relative;
+	width: 378px;
+	height: 378px;
+	background-image: url('https://github.com/antoniocapelo/quickies/blob/master/analog-clock/images/clockFace.png?raw=true');
+	left: 50%;
+	text-align: center;
+	margin: 40px 0 0 -189px;
+
+}
+
+#secondhand {
+	position: absolute;
+	top:58px;
+	left: 181px;
+	/* Transform Origin */
+	-webkit-transform-origin: 50% 95%;
+	-moz-transform-origin: 50% 95%;
+	transform-origin: 50% 95%;
+	z-index: 1000;
+}
+
+#minutehand, #hourhand {
+	position: absolute;
+	/* Transform Origin */
+	-webkit-transform-origin: 50% 100%;
+	-moz-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	z-index: 0;
+}
+
+#minutehand {
+	/*top:50px;*/
+	top: 74px;
+	left: 187px;
+}
+
+#hourhand {
+	top:90px;
+  left:187px;
+}
